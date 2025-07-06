@@ -8,8 +8,7 @@
 	text-indent: 0;
 }
 
-[epub|type~="z3998:hymn"] p + p,
-[epub|type~="z3998:song"] p + p{
+[epub|type~="z3998:hymn"] p + p{
 	margin-top: 1em;
 }
 
@@ -25,6 +24,12 @@
 	display: none;
 }
 /* end songs */
+
+/* era */
+abbr[epub|type~="se:era"]{
+	font-variant: all-small-caps;
+}
+/* end era */
 
 /* all epigraphs */
 [epub|type~="epigraph"]{
@@ -66,10 +71,6 @@ section[epub|type~="epigraph"] > *{
 
 	section[epub|type~="epigraph"] > *{
 		margin: 0;
-	}
-
-	section[epub|type~="epigraph"] > * + *{
-		margin-top: 3em;
 	}
 }
 /* end full-page epigraphs */
